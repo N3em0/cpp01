@@ -19,6 +19,8 @@ INC_DIR := includes
 
 SRC_FILES		:=	\
 Zombie.cpp \
+randomChump.cpp \
+newZombie.cpp \
 main.cpp \
 
 SRC		:=	$(addprefix $(SRC_DIR)/, $(SRC_FILES))

@@ -24,17 +24,14 @@ Zombie::~Zombie(void)
 	return ;
 }
 
+Zombie::Zombie(std::string name)
+{
+  _name = name;
+}
+
 void Zombie::announce(void)
 {
 	std::cout << this->_name << ": BraiiiiiiinnnzzzZ...";
 }
 
-Zombie* Zombie::newZombie(std::string name)
-{
 
-}
-
-void Zombie::randomChump(std::string name)
-{
-	
-}
