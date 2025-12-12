@@ -1,9 +1,9 @@
 
 #include "Zombie.hpp"
 
-Zombie* Zombie::newZombie(std::string name)
+Zombie* newZombie(std::string name)
 {
   Zombie* newZombie = new Zombie();
-  newZombie->_name = name;
+  newZombie->setZombieName(name);
   return (newZombie);
 }
