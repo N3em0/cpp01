@@ -15,10 +15,6 @@ void Harl::complain(std::string level)
     if (levels[i] == level)
       (this->*ptrFunctions[i])();
   }
-  // void (Harl::*ptrDebug)(void) = &Harl::debug();
-  // void (Harl::*ptrInfo)(void) = &Harl::info();
-  // void (Harl::*ptrWarning)(void) = &Harl::warning();
-  // void (Harl::*ptrError)(void) = &Harl::error();
 }
 
 void Harl::debug()

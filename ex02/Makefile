@@ -15,7 +15,6 @@ NAME	:=	HI_THIS_IS_BRAIN
 
 SRC_DIR := src
 BUILD_DIR	:=	.build
-# INC_DIR := includes
 
 SRC_FILES		:=	\
 main.cpp \
@@ -27,7 +26,6 @@ DEP			:=	$(OBJ:%.o=.d)
 
 CXX			:=	c++
 CXXFLAGS	:=  -Wall -Wextra -Werror -g3 -std=c++98
-#INCLUDE		:=	-I$(INC_DIR) -MMD -MP
 
 MAKEFLAGS	+=	--no-print-directory
 

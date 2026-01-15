@@ -1,0 +1,10 @@
+.build/
+objs/
+.cache/
+.vscode/
+.clangd
+*.o
+*.swp
+.DS_Store
+compile_commands.json
+ex00
