@@ -13,8 +13,15 @@ void Harl::complain(std::string level)
   for (size_t i = 0; i < 4; i++)
   {
     if (levels[i] == level)
+    {
       (this->*array[i])();
+      return;
+    }
   }
+  std::cout
+      << "Error" << std::endl
+      << "Enter only \"DEBUG\", \"INFO\", \"WARNING\" or \"ERROR\" as arguments"
+      << std::endl;
 }
 
 void Harl::debug()

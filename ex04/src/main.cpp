@@ -20,6 +20,11 @@ int main(int argc, char **argv)
   std::string buffer;
   std::size_t found;
   std::string s1 = argv[2];
+  if (s1.empty())
+  {
+    std::cout << "Error" << std::endl << "s1 can't be empty" << std::endl;
+    return (1);
+  }
   std::string s2 = argv[3];
 
   outfile.append(infile + ".replace");
