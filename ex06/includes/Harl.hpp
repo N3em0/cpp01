@@ -4,7 +4,8 @@
 #ifndef HARL_HPP
 #define HARL_HPP
 
-class Harl {
+class Harl
+{
 public:
   Harl();
   ~Harl();
@@ -16,5 +17,7 @@ private:
   void warning(void);
   void error(void);
 };
+
+typedef void (Harl::*ft_ptrFunctions)(void);
 
 #endif

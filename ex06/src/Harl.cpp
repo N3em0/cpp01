@@ -7,8 +7,8 @@ Harl::~Harl() {}
 void Harl::complain(std::string level)
 {
   std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-  void (Harl::*ptrFunctions[4])(void) = {&Harl::debug, &Harl::info,
-                                         &Harl::warning, &Harl::error};
+  ft_ptrFunctions array[4] = {&Harl::debug, &Harl::info, &Harl::warning,
+                              &Harl::error};
   size_t lvl = 0;
   for (size_t i = 0; i < 4; i++)
   {
@@ -22,16 +22,16 @@ void Harl::complain(std::string level)
   switch (lvl)
   {
   case 1:
-    (this->*ptrFunctions[lvl - 1])();
+    (this->*array[lvl - 1])();
     lvl++;
   case 2:
-    (this->*ptrFunctions[lvl - 1])();
+    (this->*array[lvl - 1])();
     lvl++;
   case 3:
-    (this->*ptrFunctions[lvl - 1])();
+    (this->*array[lvl - 1])();
     lvl++;
   case 4:
-    (this->*ptrFunctions[lvl - 1])();
+    (this->*array[lvl - 1])();
     break;
   default:
     std::cout << "[ Probably complaining about insignificant problems ]"

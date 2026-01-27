@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 
-NAME	:=	Moar_Brainz!
+NAME	:=	Moar_Brainz
 
 SRC_DIR := src
 BUILD_DIR	:=	.build
@@ -25,11 +25,11 @@ main.cpp \
 SRC		:=	$(addprefix $(SRC_DIR)/, $(SRC_FILES))
 
 OBJ			:=	$(SRC:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
-DEP			:=	$(OBJ:%.o=.d)
+DEP			:=	$(OBJ:%.o=%.d)
 
 CXX			:=	c++
-CXXFLAGS	:=  -Wall -Wextra -Werror -g3 -std=c++98
-INCLUDE		:=	-I$(INC_DIR) -MMD -MP
+CXXFLAGS	:=  -Wall -Wextra -Werror -std=c++98 -MMD -MP
+INCLUDE		:=	-I$(INC_DIR)
 
 MAKEFLAGS	+=	--no-print-directory
 

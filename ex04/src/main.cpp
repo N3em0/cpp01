@@ -1,7 +1,6 @@
 #include <fstream>
 #include <iostream>
-#include <string>
-#include <sys/stat.h>
+#include <string> //c_str && string
 
 int main(int argc, char **argv)
 {

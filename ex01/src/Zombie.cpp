@@ -14,23 +14,19 @@
 
 Zombie::Zombie(void)
 {
-	std::cout << "Zombie constructor called" << std::endl;
-	return ;
+  std::cout << "Zombie constructor called" << std::endl;
+  return;
 }
 
 Zombie::~Zombie(void)
 {
-	std::cout << this->_name << " destructor called" << std::endl;
-	return ;
+  std::cout << this->_name << " destructor called" << std::endl;
+  return;
 }
 
 void Zombie::announce(void)
 {
-	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+  std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-void Zombie::setZombieName(std::string name)
-{
-  this->_name = name;
-}
-
+void Zombie::setZombieName(std::string name) { this->_name = name; }
