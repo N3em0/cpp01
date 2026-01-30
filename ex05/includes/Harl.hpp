@@ -18,6 +18,4 @@ private:
   void error(void);
 };
 
-typedef void (Harl::*ft_ptrFunctions)(void);
-
 #endif
