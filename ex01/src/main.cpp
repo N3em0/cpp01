@@ -5,9 +5,9 @@ int main()
   size_t N;
 
   N = 4;
-  Zombie *salut = zombieHorde(N, "coucou");
+  Zombie *Heap_Zombie = zombieHorde(N, "hello");
   for (size_t i = 0; i < N; i++)
-    salut[i].announce();
-  delete[] salut;
+    Heap_Zombie[i].announce();
+  delete[] Heap_Zombie;
   return 0;
 }

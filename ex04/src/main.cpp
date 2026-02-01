@@ -18,7 +18,9 @@ int main(int argc, char **argv)
   std::string outfile;
   std::string infile = argv[1];
   std::string buffer;
+  std::string output;
   std::size_t found;
+  std::size_t pos;
   std::string s1 = argv[2];
   if (s1.empty())
   {
@@ -40,14 +42,18 @@ int main(int argc, char **argv)
 
   while (std::getline(reader, buffer))
   {
+    pos = 0;
     for (std::string::iterator it = buffer.begin(); it != buffer.end();
          it = buffer.begin() + found)
     {
-      found = buffer.find(s1);
+      found = buffer.find(s1, pos);
+    std::cout << "found value : " << found << std::endl;
+    std::cout << buffer << std::endl;
       if (found != std::string::npos)
       {
         buffer.erase(found, s1.length());
         buffer.insert(found, s2);
+        pos = found + s2.length();
       }
       else
         break;
