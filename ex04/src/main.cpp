@@ -47,8 +47,6 @@ int main(int argc, char **argv)
          it = buffer.begin() + found)
     {
       found = buffer.find(s1, pos);
-    std::cout << "found value : " << found << std::endl;
-    std::cout << buffer << std::endl;
       if (found != std::string::npos)
       {
         buffer.erase(found, s1.length());

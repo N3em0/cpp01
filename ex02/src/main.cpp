@@ -48,14 +48,4 @@ int main()
   std::cout << "stringPTR        value : " << *stringPTR << std::endl;
   std::cout << "stringREF        value : " << stringREF << std::endl
             << std::endl;
-  stringREF = notString;
-  std::cout << "[Assigning notString value to stringREF]" << std::endl;
-  std::cout << "string         address : " << &string << std::endl;
-  std::cout << "stringPTR      address : " << &stringPTR << std::endl;
-  std::cout << "stringPTR held address : " << stringPTR << std::endl;
-  std::cout << "stringREF held address : " << &stringREF << std::endl;
-  std::cout << "string           value : " << string << std::endl;
-  std::cout << "stringPTR        value : " << *stringPTR << std::endl;
-  std::cout << "stringREF        value : " << stringREF << std::endl
-            << std::endl;
 }
